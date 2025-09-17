@@ -1,0 +1,55 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Parent: Navbar */
+.navbar {
+  display: flex;              /* PARENT: makes children align in one row */
+  justify-content: space-between; /* space between logo, links, and button */
+  align-items: center;        /* vertical alignment of CHILDREN */
+  padding: 15px 30px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Child 1: Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Child 2: Navigation links */
+.nav-links ul {
+  list-style: none;
+  display: flex;              /* CHILD parent (ul) → li in one row */
+}
+
+.nav-links ul li {
+  margin: 0 10px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links ul li a.active {
+  color: green;
+  font-weight: bold;
+}
+
+/* Child 3: Button */
+.btn {
+  background: green;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
